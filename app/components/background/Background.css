@@ -1,0 +1,241 @@
+.main-card {
+    width: calc(100% - 100px);
+    margin-left: 100px;
+    margin-top: 30px;
+    padding: 40px 30px 60px 30px;
+}
+
+.greenDot {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+
+.statusDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.dfc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.status-text {
+    font-size: 12px;
+}
+
+.main-heading {
+    font-family: Prosto One;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 101px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.launch-date {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: #1E1E35;
+    padding: 6px;
+    width: 30%;
+    text-transform: uppercase;
+    font-size: smaller;
+}
+
+.paragraph {
+    font-family: Prosto One;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    margin-top: 50px;
+    position: relative;
+    text-align: left;
+    width: 60%;
+    z-index: -1;
+}
+
+.btn1 {
+    width: 170px;
+    height: 50px;
+    border-radius: 30px;
+    background: #E58E23;
+    cursor: pointer;
+}
+
+.btn1:hover {
+    background: white;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn2 {
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    background: #E58E23;
+    cursor: pointer;
+}
+
+.btn2:hover {
+    background: white;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-btn {
+    width: 35%;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.buy-text {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    margin: 5px 10px;
+}
+
+.footer {
+    width: calc(100%-100px);
+    margin-left: 100px;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer-top-text {
+    gap: 20px;
+}
+
+.footerHr {
+    width: 100%;
+    border: 1px solid white;
+}
+
+.icon-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.social-icons {
+    gap: 20px;
+}
+
+.select {
+    border-radius: 18px;
+    padding: 8px;
+    background-color: #1E1E1E;
+    color: white;
+    border: 1px solid white;
+    width: 100%;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+}
+
+.animated {
+    opacity: 0.1;
+    animation: fadeIn 5s ease forwards;
+}
+
+.main-card1 {
+    width: calc(100% - 100px);
+    padding: 5px 30px 60px 30px;
+    margin-left: 100px;
+}
+
+.animated-paragraph {
+    transform: translateX(-100%);
+    animation: slideIn 5s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+/* Add these responsive styles at the end of your existing CSS */
+
+@media only screen and (max-width: 1200px) {
+    .paragraph {
+        width: 85%;
+    }
+    .card-btn {
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .paragraph {
+        width: 98%;
+    }
+    .card-btn {
+        width: 99%;
+    }
+    .main-card {
+        width: 100%;
+        margin-left: 0;
+    }
+    .main-card1 {
+        width: 100%;
+        margin-left: 0;
+    }
+    .main-heading {
+        font-size: 50px;
+        line-height: 81px;
+    }
+    .btn1 {
+        width: 80px;
+        height: 30px;
+        border-radius: 20px;
+        font-size: 12px;
+    }
+    .footer-top-text {
+        gap: 10px;
+        flex-wrap: wrap;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+    .footer {
+        margin-left: 0;
+    }
+    .buy-text {
+        margin: 5px 0;
+    }
+    .launch-date {
+        width: 100%;
+        font-size: 10px;
+    }
+    .main-card1 {
+        padding: 20px 10px 40px 10px;
+    }
+}
+
+
+/* Additional media queries and adjustments can be added as needed */

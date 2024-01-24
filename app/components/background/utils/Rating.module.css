@@ -1,0 +1,26 @@
+/* StarRating.module.css */
+
+.starRating {
+    display: flex;
+}
+
+.star {
+    color: #FFD700;
+    /* Default fill color for stars */
+    margin-right: 2px;
+    /* Adjust the spacing between stars */
+}
+
+.partial {
+    width: 20%;
+    /* Adjust the width of the partial star */
+    overflow: hidden;
+}
+
+.empty {
+    color: #000000;
+    /* Default border color for empty stars */
+}
+
+
+/* Add more styling as needed */
