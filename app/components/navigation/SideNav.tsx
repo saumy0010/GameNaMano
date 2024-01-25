@@ -9,14 +9,14 @@ import styles from "./Navigation.module.css";
 
 const SideNav = () => {
 
-  const [showSideNav, setShowSideNav] = useState(false);
+  const [showSideNavbar, setShowSideNavbar] = useState(false);
 
   const handleHover = () => {
-    setShowSideNav(true);
+    setShowSideNavbar(true);
   };
 
   const handleLeave = () => {
-    setShowSideNav(false);
+    setShowSideNavbar(false);
   };
 
   return (
@@ -45,7 +45,7 @@ const SideNav = () => {
         <Image src="/logout.svg" width={24} height={24} alt="logout" />
       </div>
 
-      {showSideNav && (
+      {showSideNavbar && (
         <div className={styles.SideNav} onMouseLeave={handleLeave}>
           <div className={styles.sideImageContainer}>
             <Image src={"/GameQuest.png"} width={160} height={24} alt="logo" />
@@ -76,6 +76,7 @@ const SideNav = () => {
               <div>LeaderBoard</div>
             </div>
           </div>
+
           <div className={styles.hrBorder1}></div>
           <div className={styles.textIcon}>
             <div className={`${styles.dfc} ${styles.sideNavText}`}>
@@ -89,6 +90,7 @@ const SideNav = () => {
           </div>
         </div>
       )}
+
     </div>
   );
 };
