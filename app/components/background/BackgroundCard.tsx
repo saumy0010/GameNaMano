@@ -15,8 +15,11 @@ export default function BackgroundCard(props:BackgroundCardProps) {
                 {heading}
             </div>
             <div className={`${isCover ? 'animated':""}`}>
+                <div className='launch-date'>
+                {`Release Date : ${date}`}
+
+                </div>
            
-            {`Release Date : ${date}`}
             </div>
             <p className={`paragraph ${isCover ? 'animated-paragraph':""}`}>
                 {paragraph}

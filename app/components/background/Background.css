@@ -42,10 +42,9 @@
 .launch-date {
     display: flex;
     justify-content: end;
-    align-items: center;
-    background-color: #1E1E35;
+    background-color: #444341;
     padding: 6px;
-    width: 40%;
+    width: 30%;
     text-transform: uppercase;
     font-size: smaller;
 }
