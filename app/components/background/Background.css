@@ -193,6 +193,10 @@
     .card-btn {
         width: 55%;
     }
+    .launch-date {
+        width: 40%;
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -233,7 +237,7 @@
         margin: 5px 0;
     }
     .launch-date {
-        width: 100%;
+        width: 50%;
         font-size: 10px;
     }
     .main-card1 {

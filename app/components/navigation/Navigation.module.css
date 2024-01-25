@@ -1,5 +1,5 @@
 .sideNavContainer {
-    position: fixed;
+    position: absolute;
     width: 100px;
     display: flex;
     align-items: center;
@@ -15,7 +15,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    gap: 20px;
+    gap: 35px;
 }
 
 .iconContainer img:hover {
@@ -30,7 +30,7 @@
 
 .topNavContainer {
     display: flex;
-    margin-left: 100px;
+    margin-left: 90px;
     justify-content: space-between;
     padding: 30px 20px;
     align-items: center;
@@ -44,7 +44,7 @@
 
 .navTextContainer {
     width: 40%;
-    gap: 20px;
+    /* gap: 20px; */
     font-weight: 400;
     justify-content: space-around;
     color: antiquewhite;
@@ -73,18 +73,19 @@
 
 .searchInput {
     border: 1px solid white;
-    border-radius: 30px;
-    padding: 5px 0px 5px 40px;
+    border-radius: 20px;
+    padding: 6px 100px 6px 40px;
+    line-height: 22px;
     cursor: pointer;
     background-color: black;
 }
 
 .searchInput::placeholder {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: 300;
     margin-left: 20px;
-    line-height: 18px;
+    line-height: 10px;
     letter-spacing: 0em;
 }
 
@@ -215,7 +216,7 @@
     padding: 40px 15px 10px 15px;
     top: 0;
     left: 0px;
-    width: 200px;
+    width: 250px;
     height: 100vh;
     background-color: #2B2417;
     opacity: 0.98;
@@ -235,9 +236,13 @@
 
 .sideNavText {
     width: 90%;
-    gap: 25px;
+    gap: 35px;
     margin-bottom: 40px;
     justify-content: flex-start;
+}
+
+.logout {
+    margin-top: 20px;
 }
 
 .textIcon {
