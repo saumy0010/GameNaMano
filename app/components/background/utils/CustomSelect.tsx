@@ -1,6 +1,8 @@
-import React, { useState } from "react";
-import '../Background.css'
+import React from "react";
+
+
 const CustomSelect = (props:any) => {
+  
   const options = ["Price : Low to High", "Price : High to Low"];
   const {selectedOption, setSelectedOption} = props
 

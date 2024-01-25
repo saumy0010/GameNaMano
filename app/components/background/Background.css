@@ -30,12 +30,13 @@
 }
 
 .main-heading {
-    font-family: Prosto One;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 70px;
-    font-weight: 400;
+    font-weight: 1000;
     line-height: 101px;
     letter-spacing: 0em;
     text-align: left;
+    color: antiquewhite;
 }
 
 .launch-date {
@@ -44,13 +45,12 @@
     align-items: center;
     background-color: #1E1E35;
     padding: 6px;
-    width: 30%;
+    width: 40%;
     text-transform: uppercase;
     font-size: smaller;
 }
 
 .paragraph {
-    font-family: Prosto One;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
@@ -60,6 +60,8 @@
     text-align: left;
     width: 60%;
     z-index: -1;
+    font-family: 'Courier New', Courier, monospace;
+    color: antiquewhite;
 }
 
 .btn1 {
@@ -71,10 +73,10 @@
 }
 
 .btn1:hover {
-    background: white;
+    background: rgb(196, 181, 181);
     color: black;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
 .btn2 {
@@ -99,12 +101,13 @@
 }
 
 .buy-text {
-    font-family: Poppins;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 24px;
-    letter-spacing: 0em;
+    /* letter-spacing: 0em; */
     margin: 5px 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: antiquewhite
 }
 
 .footer {
@@ -165,6 +168,8 @@
 .animated-paragraph {
     transform: translateX(-100%);
     animation: slideIn 5s ease forwards;
+    font-family: 'Courier New', Courier, monospace;
+    color: antiquewhite;
 }
 
 @keyframes fadeIn {

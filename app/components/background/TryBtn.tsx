@@ -1,4 +1,4 @@
-import '../Background.css'
+import './Background.css'
 
 interface BtnType {
     buttontype: string;

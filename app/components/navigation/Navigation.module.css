@@ -1,0 +1,271 @@
+.sideNavContainer {
+    position: fixed;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    padding: 30px 0px;
+    height: 100vh;
+    border-right: 1px solid rgb(231, 219, 219);
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.iconContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
+.iconContainer img:hover {
+    fill: #DAB785;
+    cursor: pointer;
+}
+
+.hrBorder {
+    width: 100%;
+    border-top: 1px solid white;
+}
+
+.topNavContainer {
+    display: flex;
+    margin-left: 100px;
+    justify-content: space-between;
+    padding: 30px 20px;
+    align-items: center;
+}
+
+.dfc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navTextContainer {
+    width: 40%;
+    gap: 20px;
+    font-weight: 400;
+    justify-content: space-around;
+    color: antiquewhite;
+}
+
+.navTextContainer div {
+    cursor: pointer;
+}
+
+.navTextContainer div:hover {
+    color: #d4c3ac;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.vBorder {
+    height: 30px;
+    border: 1px solid rgb(98, 72, 72);
+}
+
+.searchDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchInput {
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 5px 0px 5px 40px;
+    cursor: pointer;
+    background-color: black;
+}
+
+.searchInput::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 20px;
+    line-height: 18px;
+    letter-spacing: 0em;
+}
+
+.wrapper {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.wrapper:hover {
+    border: 1px solid #E58F28;
+}
+
+.topIconDiv {
+    gap: 20px;
+}
+
+.topDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.topDivText {
+    width: 76%;
+}
+
+.topDivPop {
+    width: 24%;
+    padding: 10px;
+}
+
+.accordionDiv {
+    display: none;
+}
+
+.productContainer {
+    width: calc(100% - 100px);
+    display: flex;
+    padding: 30px 20px;
+    margin-left: 100px;
+    gap: 20px;
+}
+
+.filterDiv {
+    width: 20%;
+    border-radius: 10px;
+    background-color: #1E1D16;
+    padding: 20px;
+}
+
+.filteredDataDivContainer {
+    width: 78%;
+    overflow-y: auto;
+    gap: 20px;
+    max-height: 755px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filteredDataDiv {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .searchDiv {
+        display: none;
+    }
+    .navTextContainer {
+        width: 60%;
+    }
+    .topDiv {
+        flex-wrap: wrap;
+    }
+    .topDivText {
+        width: 95%;
+    }
+    .topDivPop {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .navTextContainer {
+        width: 98%;
+    }
+    .topIconDiv {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .navTextContainer {
+        width: 100%;
+        font-size: 12px;
+    }
+    .topDivPop {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .filterDiv {
+        display: none;
+    }
+    .accordionDiv {
+        display: block;
+    }
+    .productContainer {
+        flex-direction: column;
+    }
+    .filteredDataDivContainer {
+        width: 100%;
+    }
+}
+
+
+/* side navigation */
+
+.sideNavigation {
+    position: absolute;
+    padding: 40px 15px 10px 15px;
+    top: 0;
+    left: 0px;
+    width: 200px;
+    height: 100vh;
+    background-color: #2B2417;
+    opacity: 0.98;
+    color: white;
+    z-index: 10;
+    transform: translateX(-100%);
+    animation: slideIn 2s ease forwards;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0);
+    }
+}
+
+.sideNavText {
+    width: 90%;
+    gap: 25px;
+    margin-bottom: 40px;
+    justify-content: flex-start;
+}
+
+.textIcon {
+    margin-top: 35px;
+}
+
+.textIcon div:hover {
+    cursor: pointer;
+    color: #DAB785;
+}
+
+.textIcon svg:hover {
+    fill: red !important;
+}
+
+.hrBorder1 {
+    position: absolute;
+    left: 0;
+    bottom: 28%;
+    width: 100%;
+    border: 1px solid white;
+}
+
+.searchIconDiv {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    top: 4px;
+    left: 30px;
+}
