@@ -7,26 +7,26 @@ import Link from "next/link";
 import styles from "./Navigation.module.css";
 
 
+
 const SideNav = () => {
 
-  const [showSideNavbar, setShowSideNavbar] = useState(false);
+  const [showSideNav, setShowSideNav] = useState(false);
 
   const handleHover = () => {
-    setShowSideNavbar(true);
+    setShowSideNav(true);
   };
 
   const handleLeave = () => {
-    setShowSideNavbar(false);
+    setShowSideNav(false);
   };
 
   return (
-
+    
     <div className={styles.sideNavContainer}>
       <div>
         <Image src="/side_logo.png" width={70} height={40} alt="side logo" />
       </div>
       <div className={styles.iconContainer} onMouseOver={handleHover}>
-
         <Link href={"/"}>
           <Image src="/home.svg" width={24} height={24} alt="home" />
         </Link>
@@ -38,15 +38,13 @@ const SideNav = () => {
         <Image src="/trophy.svg" width={24} height={24} alt="trophy" />
 
       </div>
-
       <div className={styles.hrBorder}></div>
       <div className={styles.iconContainer} onMouseOver={handleHover}>
         <Image src="/setting.svg" width={24} height={24} alt="setting" />
         <Image src="/logout.svg" width={24} height={24} alt="logout" />
       </div>
-
-      {showSideNavbar && (
-        <div className={styles.SideNav} onMouseLeave={handleLeave}>
+      {showSideNav && (
+        <div className={styles.sideNavigation} onMouseLeave={handleLeave}>
           <div className={styles.sideImageContainer}>
             <Image src={"/GameQuest.png"} width={160} height={24} alt="logo" />
           </div>
@@ -73,10 +71,11 @@ const SideNav = () => {
             </div>
             <div className={`${styles.dfc} ${styles.sideNavText}`}>
               <Image src="/trophy.svg" width={24} height={24} alt="trophy" />
+
               <div>LeaderBoard</div>
+
             </div>
           </div>
-
           <div className={styles.hrBorder1}></div>
           <div className={styles.textIcon}>
             <div className={`${styles.dfc} ${styles.sideNavText}`}>
@@ -90,7 +89,6 @@ const SideNav = () => {
           </div>
         </div>
       )}
-
     </div>
   );
 };

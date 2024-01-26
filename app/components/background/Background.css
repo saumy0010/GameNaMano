@@ -23,6 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 30px;
 }
 
 .status-text {
@@ -107,36 +108,6 @@
     margin: 5px 10px;
     font-family: 'Courier New', Courier, monospace;
     color: antiquewhite
-}
-
-.footer {
-    width: calc(100%-100px);
-    margin-left: 100px;
-    padding: 20px 0px;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.footer-top-text {
-    gap: 20px;
-}
-
-.footerHr {
-    width: 100%;
-    border: 1px solid white;
-}
-
-.icon-container {
-    width: 50px;
-    height: 50px;
-    border-radius: 6px;
-    border: 1px solid white;
-    cursor: pointer;
-}
-
-.social-icons {
-    gap: 20px;
 }
 
 .select {
@@ -226,15 +197,6 @@
         height: 30px;
         border-radius: 20px;
         font-size: 12px;
-    }
-    .footer-top-text {
-        gap: 10px;
-        flex-wrap: wrap;
-        font-size: 12px;
-        white-space: nowrap;
-    }
-    .footer {
-        margin-left: 0;
     }
     .buy-text {
         margin: 5px 0;

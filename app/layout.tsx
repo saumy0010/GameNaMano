@@ -2,10 +2,12 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import NextTopLoader from 'nextjs-toploader'
 
-import SideNav from './components/navigation/sideNav'
+import SideNav from './components/navigation/SideNav'
 import TopNav from './components/navigation/TopNav'
 import { allData } from './components/background/utils/allData'
 import BackgroundCard from './components/background/BackgroundCard'
+import Footer from './components/footer/Footer'
+
 
 import './globals.css'
 
@@ -51,6 +53,8 @@ export default function RootLayout({
         <div className='gapDiv'></div>
         <BackgroundCard {...allData['4']} />
         <div className='gapDiv'></div>
+
+        <Footer />
         
       </body>
     </html>
