@@ -14,7 +14,7 @@ const BuyNow = (props:any)=>{
     }
     
     return (
-        <div className="btn2 dfc" onClick={handleClick}>
+        <div className="buy-now dfc" onClick={handleClick}>
             Buy Now
         </div>
     )

@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from './StarRating.module.css'; // Import your CSS module
+
+import styles from './Rating.module.css'; 
 
 interface RatingProps {
   rating: number;

@@ -1,5 +1,6 @@
 import BackgroundCard from "./components/background/BackgroundCard";
 import { BackgroundCardProps, allData } from './components/background/utils/allData';
+import ProductComponent from "./components/product/ProductComponent";
 
 
 export default function Home() {
@@ -7,12 +8,8 @@ export default function Home() {
  
   return (
     <div>
-
       <BackgroundCard {...data}/>
-     
-
+      <ProductComponent/>
     </div>
-   
-    
   );
 }

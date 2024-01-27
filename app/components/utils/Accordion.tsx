@@ -4,7 +4,7 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import FilterComponent from '../../product/filter';
+import FilterComponent from '../product/filter';
 
 export default function AccordionUsage(props:any) {
     const {categories,loading,setSelectedCategories,setFilteredData,setSelectedOption} = props

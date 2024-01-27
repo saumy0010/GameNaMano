@@ -87,6 +87,22 @@
     cursor: pointer;
 }
 
+.buy-now {
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    background: #1a1817;
+    cursor: pointer;
+    color: white;
+}
+
+.buy-now:hover {
+    background: rgb(196, 181, 181);
+    color: black;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
 .btn2:hover {
     background: white;
     color: black;
@@ -104,7 +120,6 @@
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
-    /* letter-spacing: 0em; */
     margin: 5px 10px;
     font-family: 'Courier New', Courier, monospace;
     color: antiquewhite
@@ -209,6 +224,3 @@
         padding: 20px 10px 40px 10px;
     }
 }
-
-
-/* Additional media queries and adjustments can be added as needed */

@@ -7,7 +7,7 @@ interface BtnType {
 const TryBtn = (props: BtnType)=>{
     return (
         <div className="btn1 dfc">
-            {props.buttontype}
+            {props.buttontype || "Try it now"}
         </div>
     )
 }
