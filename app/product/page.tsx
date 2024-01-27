@@ -2,9 +2,9 @@
 import { useEffect, useState } from "react";
 
 import FilterComponent from '../components/product/filter';
-import getData from '../components/api/getData';
+import GetData from '../components/api/getData';
 import { ProductProps } from '../components/product/ProductComponent';
-import ProductCard from '../components/product/productCard';
+import ProductCard from '../components/product/ProductCard';
 import CustomSelect from '../components/utils/CustomSelect';
 import AccordionUsage from '../components/utils/Accordion';
 
@@ -18,11 +18,11 @@ export default function Page() {
   const [filteredData, setFilteredData] = useState<any>([]);
   const [selectedOption, setSelectedOption] = useState<string>("");
 
-  const { data, loading } = getData(
+  const { data, loading } = GetData(
     "https://dummyjson.com/products/categories"
   );
 
-  const product = getData("https://dummyjson.com/products");
+  const product = GetData("https://dummyjson.com/products");
 
   useEffect(()=>{
 

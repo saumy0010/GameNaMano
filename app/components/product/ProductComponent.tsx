@@ -3,8 +3,8 @@
 import React from 'react'
 import { useRouter } from 'next/navigation';
 
-import ProductCard from './productCard';
-import getData from '../api/getData';
+import ProductCard from './ProductCard';
+import GetData from '../api/getData';
 
 import './product.css'
 
@@ -25,7 +25,7 @@ export interface ProductProps {
 
 const ProductComponent = () => {
 
-        const { loading, data } = getData("https://dummyjson.com/products")
+        const { loading, data } = GetData("https://dummyjson.com/products")
 
         const router = useRouter()
         const handleClick = ()=>{

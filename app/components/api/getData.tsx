@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-export default function getData(props:any) {
+export default function GetData(props:any) {
 
     const [data,setData] = useState<any>([])
     const [err,setErr] = useState('')
